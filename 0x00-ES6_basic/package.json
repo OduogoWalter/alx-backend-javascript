@@ -3,36 +3,41 @@
     "version": "1.0.0",
     "description": "See README.md",
     "scripts": {
-        "dev": "node 0-main.js"
-    },
-    "dependencies": {
+        "dev": "node 0-main.js",
+        "test": "jest"
     },
     "devDependencies": {
-      "@babel/core": "^7.0.0",
-      "@babel/preset-env": "^7.0.0",
-      "babel-jest": "^26.0.0",
-      "eslint": "^7.0.0",
-      "jest": "^26.0.0"
+        "@babel/core": "^7.0.0",
+        "@babel/preset-env": "^7.25.7",
+        "babel-jest": "^26.6.3",
+        "eslint": "^7.32.0",
+        "jest": "^26.6.3"
     },
     "babel": {
-      "presets": ["@babel/preset-env"]
+        "presets": [
+            "@babel/preset-env"
+        ]
     },
     "eslintConfig": {
-      "extends": "eslint:recommended",
-      "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-      },
-      "env": {
-        "es6": true,
-        "node": true,
-        "jest": true
-      }
+        "extends": "eslint:recommended",
+        "parserOptions": {
+            "ecmaVersion": 2018,
+            "sourceType": "module"
+        },
+        "env": {
+            "es6": true,
+            "node": true,
+            "jest": true
+        }
     },
     "jest": {
-      "transform": {
-        "^.+\\.js$": "babel-jest"
-      }
-    }
-  }
-  
+        "transform": {
+            "^.+\\.js$": "babel-jest"
+        }
+    },
+    "main": "0-constants.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "module"
+}
