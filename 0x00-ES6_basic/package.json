@@ -1,0 +1,38 @@
+{
+    "name": "alx-backend-javascript",
+    "version": "1.0.0",
+    "description": "See README.md",
+    "scripts": {
+        "dev": "node 0-main.js"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+      "@babel/core": "^7.0.0",
+      "@babel/preset-env": "^7.0.0",
+      "babel-jest": "^26.0.0",
+      "eslint": "^7.0.0",
+      "jest": "^26.0.0"
+    },
+    "babel": {
+      "presets": ["@babel/preset-env"]
+    },
+    "eslintConfig": {
+      "extends": "eslint:recommended",
+      "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+      },
+      "env": {
+        "es6": true,
+        "node": true,
+        "jest": true
+      }
+    },
+    "jest": {
+      "transform": {
+        "^.+\\.js$": "babel-jest"
+      }
+    }
+  }
+  
